@@ -13,16 +13,7 @@ const screenSchema = new mongoose.Schema({
             rows: [
                 {
                     name: String,
-                    seats: [
-                        {
-                            seatNumber: Number,
-                            status: {
-                                type: String,
-                                enum: ['available', 'booked'],
-                                default: 'available'
-                            }
-                        }
-                    ]
+
                 }
             ]
         }
