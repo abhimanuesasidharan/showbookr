@@ -13,7 +13,7 @@ const castRoutes = require('./routes/castRoutes')
 const theatreRoutes = require('./routes/theatreRoutes')
 const screenRoutes = require('./routes/screenRoutes')
 const showRoutes = require('./routes/showRoutes')
-
+const bookingRoutes = require('./routes/bookingRoutes')
 
 const app = express()
 const port = 3000
@@ -29,6 +29,7 @@ app.use('/casts', castRoutes)
 app.use('/theatres', theatreRoutes)
 app.use('/screens', screenRoutes)
 app.use('/shows', showRoutes)
+app.use('/bookings', bookingRoutes)
 
 
 main().then(()=>console.log("db connected")).catch(err => console.log(err));

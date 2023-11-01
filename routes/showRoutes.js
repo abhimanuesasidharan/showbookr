@@ -1,5 +1,6 @@
 const express = require('express')
 const Show = require('../models/show')
+const screen = require('../models/screen')
 const router = express.Router()
 
 router.get('/', async (req, res, next) => {

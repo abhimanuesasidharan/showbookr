@@ -13,7 +13,7 @@ const screenSchema = new mongoose.Schema({
             rows: [
                 {
                     name: String,
-
+                    numberOfSeats: Number
                 }
             ]
         }
